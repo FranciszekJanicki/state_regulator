@@ -8,6 +8,10 @@ target_include_directories(state_regulator PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+target_link_libraries(state_regulator PUBLIC
+	linalg
+)
+
 target_compile_options(state_regulator PUBLIC
     -std=c23
     -Wall
